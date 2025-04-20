@@ -12,4 +12,16 @@
   
 </div>
 
+</div>
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=ViniciusCosta7&show_icons=true&theme=dark"
+    media="(prefers-color-dracula: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=JonatasMsilva1&show_icons=true"
+    media="(prefers-color-dracula: light), (prefers-color-dracula: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?username=JonatasMsilva1&show_icons=true" />
+</picture>
 
