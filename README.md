@@ -2,7 +2,7 @@
 
 - 🔭 Eu sou Jovem Aprendiz na Prorelax
 - 🌱 Estudo Engenharia De Software | CESU
-- 👯 Contate-me no email: jonatas.marquesda.silva10@gmail.com
+- 📧 Contate-me no email: jonatas.marquesda.silva10@gmail.com
 
 <div> 
   <a href="https://www.instagram.com/jonatas.marquesda.silva/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
