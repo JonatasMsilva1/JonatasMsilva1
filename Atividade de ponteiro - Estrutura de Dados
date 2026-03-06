@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	int x=10, y=20, z=100, N=24;
+	int *ptrx, *ptry, *ptrz, *ptrN;
+	char tc= 'c';
+	char *ptrtc;
+	
+	ptrx = &x;
+	ptry = &y;
+	ptrz = &z;
+	ptrN = &N;
+	ptrtc = &tc;
+	
+	*ptrx = x;
+	*ptry = y;
+	*ptrz = z;
+	*ptrN = N;
+	*ptrtc = tc;
+	
+		printf("valor x = %d\n", x);
+		printf("valor y = %d\n", y);
+		printf("valor z = %d\n", z);
+		printf("valor N = %d\n", N);
+		printf("valor tc = %c\n", tc);
+	printf("------------------------------------------------------------------\n");
+		printf("End. Mem. x = %p\n", &x);
+		printf("End. Mem. y = %p\n", &y);
+		printf("End. Mem. z = %p\n", &z);
+		printf("End. Mem. N = %p\n", &N);
+		printf("End. Mem. tc = %p\n", &tc);
+	printf("------------------------------------------------------------------\n");
+		printf("End. Mem. ptrx = %p\n", &ptrx);
+		printf("End. Mem. ptry = %p\n", &ptry);
+		printf("End. Mem. ptrz = %p\n", &ptrz);
+		printf("End. Mem. ptrN = %p\n", &ptrN);
+		printf("End. Mem. ptrtc = %p\n", &ptrtc);
+	printf("-------------------------------------------------------------------\n");
+		printf("Valor ptrx = %p\n", ptrx);
+		printf("Valor ptry = %p\n", ptry);
+		printf("Valor ptrz = %p\n", ptrz);
+		printf("Valor ptrtc = %p\n", ptrtc);
+		printf("Valor ptrN = %p\n", ptrN);
+	printf("--------------------------------------------------------------------\n");
+		printf("Vlr. onde ptrx aponta = %d\n", *ptrx);
+		printf("Vlr. onde ptry aponta = %d\n", *ptry);
+		printf("Vlr. onde ptrz aponta = %d\n", *ptrz);
+		printf("Vlr. onde ptrtc aponta = %d\n", *ptrtc);
+		printf("Vlr. onde ptrN aponta = %d\n", *ptrN);
+	printf("--------------------------------------------------------------------\n");
+		printf("End. Mem. x = %p\n", &*ptrx);
+		printf("End. Mem. y = %p\n", &*ptry);
+		printf("End. Mem. z = %p\n", &*ptrz);
+		printf("End. Mem. N = %p\n", &*ptrN);
+		printf("End. Mem. tc = %p\n", &*ptrtc);
+	printf("--------------------------------------------------------------------\n");
+	
+	char *ptrnome;
+	char nome[40];
+	int i;
+	
+	printf("Nome: ");
+	gets(nome);
+	
+	ptrnome = nome;
+
+	printf("End. Mem. Nome = %p\n", ptrnome);
+	
+	for(i=0; i<strlen(nome); i++){
+		ptrnome = &nome[i];
+		printf("End. Mem. Nome na posicao %d = %p\n", i+1, ptrnome);
+	}
+		
+}
